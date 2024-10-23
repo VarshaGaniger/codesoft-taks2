@@ -1,0 +1,45 @@
+package com.company;
+import java.util.Scanner;
+public class Code_Soft_task2 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Your Mathematics Marsks:");
+        float math=sc.nextFloat();
+        System.out.println("Enter Your Science marks:");
+        float science=sc.nextFloat();
+        System.out.println("Enter your Kannada marks:");
+        float kannada=sc.nextFloat();
+        System.out.println("Enter your hindi marks:");
+        float hindi=sc.nextFloat();
+        System.out.println("Enter your Social marks:");
+        float social=sc.nextFloat();
+        System.out.println("Enter your english marks:");
+        float english=sc.nextFloat();
+        float sum=kannada+english+hindi+social+hindi+math;
+        System.out.println("Total marks obtained out of 600 is:"+sum);
+        float percentage=sum/6;
+        System.out.println("The percentage obtained is:"+percentage);
+        System.out.print("Grade = ");
+        if(100>=percentage && percentage>90){
+            System.out.println("A+");
+        }
+        else if(90>=percentage && percentage>80){
+            System.out.println("A");
+        }
+        else if(80>=percentage && percentage>70){
+            System.out.println("B+");
+        }
+        else if(70>=percentage && percentage>60){
+            System.out.println("B");
+        }
+        else if(60>=percentage && percentage>50){
+            System.out.println("C+");
+        }
+        else if(50>=percentage && percentage>40){
+            System.out.println("C");
+        }
+        else{
+            System.out.println("OOPS you failed in exam");
+        }
+    }
+}
